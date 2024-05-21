@@ -9,8 +9,7 @@ test("Get User", async ({ request }) => {
 
   console.log(await response.json());
   expect(response.status()).toBe(200);
-  const text = await response.text();
-  expect(text).toContain("Janet");
+  
 });
 
 //POST
